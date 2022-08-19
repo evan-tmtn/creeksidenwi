@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)https://s0.2mdn.net/8242025/1543624810824/quickbooks_mileage_v1_300x250/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Quickbooks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--DOUBLE CLICK MEDIA CLICKTAG-->
+    <script type="text/javascript">var clickTag = "http://www.google.com"; </script>
+    <!--CDN links for the latest TweenLite and EasePack-->
+    <script src="./easepack_1.19.1_73f878f2eefbdccb4dd209b874ad9cc4_min.js"></script>
+    <script src="./tweenmax_1.19.1_92cf05aba6ca4ea5cbc62b5a7cb924e3_min.js"></script>
+    <!-- GSAP CustomEase isn't posted online, has to live locally -->
+    <script type="text/javascript" src="./CustomEase(1).js"></script>
+
+    <style type="text/css" media="screen">
+      html, body, div,
+      a, img {
+        margin:0;
+        padding:0;
+        border:0;
+        font-size:100%;
+        font:inherit;
+        vertical-align:baseline;
+      }
+      body {
+        font-family:arial;
+        background:white;
+        overflow:hidden;
+      }
+      #container {
+        position:absolute;
+        overflow:hidden;
+        background-color:#ffffff;
+        width:300px;
+        height:250px;
+        top:0px;
+        left:0px;
+        cursor:pointer;
+      }
+
+      /* STYLES FOR 1PX GRAY FRAME */
+
+      #frame {
+      	position:absolute;
+      	top:0px;
+      	left:0px;
+      	width:100%;
+      	height:100%;
+      	z-index:1000;
+      }
+      .frame {
+        position:absolute; background-color:#999999;
+      }
+      #frameTop {
+      	width:100%; height:1px; top:0px; left:0px;
+      }
+      #frameBottom {
+      	width:100%; height:1px; bottom:0px; left:0px;
+      }
+      #frameLeft {
+      	width:1px; height:100%; top:0px; left:0px;
+      }
+      #frameRight {
+      	width:1px; height:100%; top:0px; right:0px;
+      }
+
+      /* STYLES FOR WHITE IMAGE FRAME */
+
+      .whiteFrame {
+        position:absolute; background-color:#FFFFFF; z-index:110;
+      }
+      #whiteFrameTop {
+        width:100%; height:30px; top:-30px; left:0px;
+      }
+      #whiteFrameBottom {
+        width:100%; height:15px; bottom:-15px; left:0px;
+      }
+      #whiteFrameLeft {
+        width:15px; height:100%; top:0px; left:-15px;
+      }
+      #whiteFrameRight {
+        width:15px; height:100%; top:0px; right:-15px;
+      }
+
+      /* END FRAME STYLES */
+
+      #cover {
+      	position:absolute;
+      	width:300px;
+      	height:250px;
+      	top:0px;
+      	left:0px;
+      	background-color:#FFFFFF;
+      	z-index:10000;
+      }
+      .imageClass {
+        position:absolute;
+        background-size:contain;
+        background-repeat:no-repeat;
+        top:0px;
+        left:0px;
+        width:300px;
+        height:250px;
+        opacity:0;
+      }
+      .opacityOn {
+        opacity:1;
+      }
+      #bannerImage1 {
+        background-image:url('image1.jpg');
+        z-index:101;
+      }
+      #bannerImage1a {
+        background-image:url('image1a.png');
+        z-index:120;
+      }
+      #bannerImage2 {
+        background-image:url('image1.jpg');
+        z-index:101;
+      }
+      #bannerImage3 {
+        background-image:url('image3.jpg');
+        z-index:301;
+      }
+      #copy1 {
+        background-image:url('copy1.png');
+        z-index:113;
+      }
+      #copy1a {
+        background-color:#53b700;
+        position:absolute;
+        width:116px;
+        height:76px;
+        top:87px;
+        left:0px;
+        z-index:111;
+      }
+      #copy2 {
+        background-image:url('copy2.png');
+        z-index:210;
+      }
+      #copy3 {
+        background-image:url('copy3.png');
+        z-index:310;
+      }
+      #copy3a {
+        /*background-color:red;*/
+        background-color:#53b700;
+        position:absolute;
+        width:135px;
+        height:73px;
+        top:90px;
+        left:0px;
+        z-index:309;
+      }
+      #copy4 {
+        background-image:url('copy4.png');
+        z-index:410;
+      }
+      #cta1 {
+        background-image:url('ctaCopy.png');
+        z-index:520;
+        left:-5px;
+      }
+      #cta2 {
+        position:absolute;
+        border-radius:15px;
+        background:#2ca01c;
+        left:100px;
+        top:195px;
+        width:100px;
+        height:30px; 
+        z-index:510;
+      }
+      #cta3 {
+        position:absolute;
+        border-radius:15px;
+        background:#34771f;
+        left:100px;
+        top:195px;
+        width:30px;
+        height:30px; 
+        z-index:515;
+        opacity:0;
+      }
+      #cornerLogo {
+        background-image:url('cornerLogo.png');
+        z-index:500;
+        top:60px;
+      }
+      #logo {
+        background-image:url('logo.png');
+        z-index:505;
+      }
+
+  </style>
+
+  <script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+
+  <body>
+    <a href="javascript:window.open(window.clickTag)">
+  	<div id="container">
+
+  		<div id="frame">
+  			<div class="frame" id="frameTop"></div>
+  			<div class="frame" id="frameBottom"></div>
+  			<div class="frame" id="frameLeft"></div>
+  			<div class="frame" id="frameRight"></div>
+  		</div>
+
+  		<div id="cover" style="opacity: 0;"></div>
+
+      <div class="whiteFrame" id="whiteFrameTop" style="transform: matrix(1, 0, 0, 1, 0, 30);"></div>
+      <div class="whiteFrame" id="whiteFrameBottom" style="transform: matrix(1, 0, 0, 1, 0, -15);"></div>
+      <div class="whiteFrame" id="whiteFrameLeft" style="transform: matrix(1, 0, 0, 1, 15, 0);"></div>
+      <div class="whiteFrame" id="whiteFrameRight" style="transform: matrix(1, 0, 0, 1, -15, 0);"></div>
+
+      <div class="imageClass opacityOn" id="copy1" style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 0;"></div>
+      <div class="imageClass opacityOn" id="copy1a" style="transform: matrix(1, 0, 0, 1, 0, 0); width: 219px;"></div>
+      <div class="imageClass opacityOn" id="copy2" style="opacity: 1;"></div>
+      <div class="imageClass opacityOn" id="copy3" style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 0;"></div>
+      <div class="imageClass opacityOn" id="copy3a" style="transform: matrix(1, 0, 0, 1, 0, -14); height: 98px; width: 129px;"></div>
+      <div class="imageClass opacityOn" id="copy4" style="opacity: 1;"></div>
+
+      <div class="imageClass opacityOn" id="bannerImage1"></div>
+      <div class="imageClass opacityOn" id="bannerImage1a"></div>
+      <div class="imageClass" id="bannerImage2" style="opacity: 1;"></div>
+      <div class="imageClass" id="bannerImage3" style="opacity: 1;"></div>
+
+      <div class="imageClass opacityOn" id="cornerLogo" style="transform: matrix(1, 0, 0, 1, 0, -60);"></div>
+      <div class="imageClass" id="logo" style="opacity: 1;"></div>
+      <div class="imageClass" id="cta1" style="transform: translate3d(-129.695px, 0px, 0px); opacity: 0.00234537;"></div>
+      <div class="" id="endframeBg"></div>
+      <div class="" id="cta2" style="width: 30px; transform: translate3d(-24.9567px, 0px, 0px) scale(0.996032, 0.996032);"></div>
+      <div class="" id="cta3"></div>
+
+  	</div>
+    </a>
+  
+
+  <script>
+
+  /* THIS DEFINES THE CUSTOM EASING */
+ var quickbooksEase = CustomEase.create("custom", "M0,0 C0.17,0 0.406,0.028 0.482,0.1 0.566,0.18 0.598,0.3 0.6,0.5 0.602,0.706 0.638,0.836 0.71,0.9 0.777,0.96 0.794,1 1,1");
+
+  var quickbooksEaseIntro = CustomEase.create("custom", "M0,0,C0.17,0,0.202,0.028,0.278,0.1,0.362,0.18,0.398,0.3,0.4,0.5,0.402,0.706,0.428,0.836,0.5,0.9,0.567,0.96,0.794,1,1,1");
+
+  window.onload = function(){
+
+      /* INITIAL SETUP */
+      TweenLite.to(cover,0,{alpha:0});
+      TweenLite.to(copy1,0,{x:-160});
+      TweenLite.to(copy1a,0,{x:-160});
+      TweenLite.to(copy2,0,{alpha:0});
+      TweenLite.to(copy3,0,{x:-250});
+      TweenLite.to(copy3a,0,{x:-250});
+      TweenLite.to(copy4,0,{alpha:0});
+      TweenLite.to(cta1,0,{x:-130});
+      TweenLite.to(cta2,0,{width:"30px", scale:0, x:-25});
+      TweenLite.delayedCall(0, frame01);
+    }
+
+    function frame01 (){
+      TweenLite.to(whiteFrameTop,1,{y:30, ease:quickbooksEase});
+      TweenLite.to(whiteFrameLeft,1,{x:15, ease:quickbooksEase});
+      TweenLite.to(whiteFrameRight,1,{x:-15, ease:quickbooksEase});
+      TweenLite.to(whiteFrameBottom,1,{y:-15, ease:quickbooksEase});
+      TweenLite.to(cornerLogo,1,{y:-60, ease:quickbooksEase});
+      TweenLite.to(copy1,1.2,{x:0, delay:.1, ease:quickbooksEaseIntro});
+      TweenLite.to(copy1a,1.2,{x:0, delay:.1, ease:quickbooksEaseIntro});
+      TweenLite.delayedCall(2, frame02);      
+    }
+
+    function frame02() {
+      TweenLite.to(bannerImage2,0,{alpha:1});
+      TweenLite.to(copy1,.4,{alpha:0, delay:.4, ease:Power0.easeNone});
+      TweenLite.to(copy1a,1,{width:"219px", delay:.3, ease:Power4.easeInOut});
+      TweenLite.to(copy2,.4,{alpha:1, delay:1, ease:Power0.easeNone});
+      TweenLite.delayedCall(2.8, frame03);   
+    }
+
+    function frame03() {
+      TweenLite.to(bannerImage3,0,{alpha:1, delay:.4});
+      TweenLite.to(copy3,1.4,{x:0, ease:quickbooksEase});
+      TweenLite.to(copy3a,1.4,{x:0, ease:quickbooksEase});
+      TweenLite.delayedCall(2.3, frame04);  
+    }
+
+    function frame04() {
+      TweenLite.to(copy3,.4,{alpha:0, delay:.4, ease:Power0.easeNone});
+      TweenLite.to(copy3a,1,{width:"129px", height:"98px", y:-14, delay:.4, ease:Power4.easeInOut});
+      TweenLite.to(copy4,.4,{alpha:1, delay:1, ease:Power0.easeNone});
+      TweenLite.delayedCall(3, frame05);  
+    }
+
+    function frame05() {
+      TweenLite.to(logo,0,{alpha:1});
+      TweenLite.delayedCall(0, frame06);
+    }
+
+    function frame06() {  
+      TweenLite.to(cta1,.6,{x:0, alpha:1, delay:.4, ease:quickbooksEase});
+      TweenLite.to(cta2,.5,{scale:1, ease:quickbooksEase});  
+      TweenLite.to(cta2,.7,{width:"100px", x:0, delay:.4, ease:quickbooksEase}); 
+      container.addEventListener("mouseover", ctaOver);
+      container.addEventListener("mouseout", ctaOut);
+    }
+
+    // BEGIN CTA ROLLOVER FUNCTIONALITY
+
+    function ctaOver() {
+      TweenLite.to(cta3,.25,{width:"100px", ease:Power4.easeOut});  
+      TweenLite.to(cta3,0,{alpha:1, ease:Power0.easeNone});      
+    }
+    function ctaOut() {
+      TweenLite.to(cta3,.25,{width:"0px", alpha:0, ease:Power4.easeIn}); 
+    }
+
+    // END CTA ROLLOVER FUNCTIONALITY
+
+  </script>
+
+</body></html>
