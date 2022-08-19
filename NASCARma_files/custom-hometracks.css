@@ -1,0 +1,782 @@
+a.skip-to-main-content {
+    color: #000000;
+    display: block;
+    height: 55px;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: -1000em;
+    width: 160px;
+}
+a.skip-to-main-content:focus {
+    background-color: #f1f1f1;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+    cursor: pointer;
+    display: block;
+    height: auto;
+    line-height: normal;
+    right: 0;
+    top: 5px;
+    text-decoration: none;
+    z-index: 999999;
+}
+.nascar-home-tracks :focus,
+.nascar-home-tracks a:focus {
+  outline: -webkit-focus-ring-color auto 2px;
+  outline: 2px solid #127cbd;
+}
+.panel-grid .has_sidebar .panel-grid-cell:last-child {
+    margin: 0 20px 0 auto;
+}
+.nwgt-tl .dataTable .actions a{
+    background:#1e73be;
+}
+.header-links {
+    font-size: 16px;
+}
+.article-page-container .entry-meta span, .block-articles .entry-content p {
+    font-size: 14px !important;
+}
+.article-page-container .entry-meta span{
+    font-size: 12px !important;
+}
+.block-articles .entry-content p {
+    font-size: 16px !important;
+}
+.video-list-container{
+    background-color: #1f1f1f;
+}
+.video-list-container.light .video-list-item .title-link{
+    color: black;
+    height: auto;
+    max-height: 66px;
+}
+.author-prefix{
+    display: none;
+}
+p.wpml-ls-statics-post_translations.wpml-ls {
+    color: #B5B3AB;;
+    width: 1020px;
+    margin: 0 auto;
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 14px;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    z-index: 500;
+    height:0px;
+}
+.block-articles .wpml-ls-statics-post_translations{
+    color: #B5B3AB;
+    width: 95% !important;
+    font-size: 14px !important;
+}
+.has_sidebar .jcarousel img, .site-content .jcarousel img {
+    height: auto;
+}
+.admin-bar .header-main {
+  min-height: 72px;
+}
+/*Main Navigation Overrides*/
+.site-navigation a {
+    font-weight: 100;
+}
+.site-navigation a:hover {
+	color: #ffffff !important;
+}
+nav.primary-navigation a {
+    padding: 0 33px;
+}
+nav.primary-navigation .menu-main-nav-container ul.nav-menu {
+    height: 72px;
+}
+nav.primary-navigation .menu-main-nav-container ul.nav-menu li {
+    line-height: 72px;
+}
+nav.primary-navigation ul.nav-menu li:hover > a {
+    color: #272525;
+}
+nav.primary-navigation .menu-main-nav-container ul.nav-menu li:focus-within {
+  background-color: #1e73be;
+}
+nav.primary-navigation li:focus a,
+nav.primary-navigation ul#menu-main-nav.nav-menu li a:focus {
+  background-color: #1e73be;
+  outline: 2px solid #127cbd;
+}
+nav.primary-navigation .menu-main-nav-container #menu-main-nav ul.sub-menu li,
+nav.primary-navigation .menu-main-nav-container #menu-main-nav ul.sub-menu li ul.sub-menu {
+    line-height: 65px;
+}
+nav.primary-navigation .menu-main-nav-container ul.nav-menu ul.sub-menu li a,
+nav.primary-navigation .menu-main-nav-container ul.nav-menu ul.sub-menu li ul.sub-menu a {
+    color: #fff;
+}
+nav.primary-navigation .menu-main-nav-container ul.nav-menu ul.sub-menu li:hover a,
+nav.primary-navigation .menu-main-nav-container ul.nav-menu ul.sub-menu li ul.sub-menu li:hover a {
+    color: #272525;
+}
+nav.primary-navigation .menu-main-nav-container ul.nav-menu ul.sub-menu {
+    top: 73px;
+}
+nav.primary-navigation .menu-main-nav-container ul.nav-menu ul.sub-menu ul {
+    top: 0;
+}
+/*nav.primary-navigation li .menu-item-has-children > a,
+nav.primary-navigation li .page_item_has_children > a,
+nav.primary-navigation li .menu-item-has-children li,
+nav.primary-navigation li .page_item_has_children li {
+    width: 215px;
+}*/
+nav.primary-navigation .menu-item-has-children > a:after,
+nav.primary-navigation .page_item_has_children > a:after {
+    top: 33px;
+}
+nav.primary-navigation .menu-item-has-children li.menu-item-has-children > a:after,
+nav.primary-navigation .menu-item-has-children li.page_item_has_children > a:after,
+nav.primary-navigation .page_item_has_children li.menu-item-has-children > a:after,
+nav.primary-navigation .page_item_has_children li.page_item_has_children > a:after {
+    top: 37px;
+}
+
+.panel-grid .has_sidebar .panel-grid-cell:first-child {
+    margin-top: 40px;
+}
+
+header.hero-component .header-box .header-txt {
+    background: rgba(255, 255, 255, 0.8);;
+    bottom: 0;
+    padding: 0;
+}
+
+.site-title img {
+    max-width: 85px !important;
+    margin-top: 15px;
+}
+.inner-footer .site-title img {
+    margin-top: 0;
+}
+.hero7-header-txt.overlay-bottom {
+    height: auto;
+}
+.hero7-header-txt .hero-post-title {
+    margin: 0px auto 0px;
+    padding-top: 10px;
+    text-transform: none;
+    font-size:2.5em !important;
+}
+.video-list-container {
+    padding: 0 0px;
+}
+.copyright-text.second span {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+.inner-footer .site-navigation ul {
+    margin-top: 12px;
+}
+header .title-wrap {
+    width: 100%;
+    margin-top: 20px;
+}
+article .featuredCaption {
+    font-size: 14px;
+}
+.main-page-container article.hentry {
+    padding-top: 0px;
+}
+/* Begin Content Teaser Styles*/
+
+.content-teasers-container {
+    margin-top: 10px;
+}
+
+.content-teasers-container .content-item{
+    margin-bottom: 0px;
+}
+
+.content-teasers-container .content-teaser-header {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: Stainless-Light;
+    letter-spacing: 3px;
+    color: #999999;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+    padding-top: 0px;
+}
+.content-teasers-container h2{
+    font-size: 20px;
+}
+.content-teasers-container h2:hover  {
+    color: #999999 !important;
+}
+
+.content-teasers-container.dark h2:hover {
+    color: #999999 !important;
+}
+.content-teasers-container.light h2:hover {
+    color: #999999 !important;
+}
+
+.content-teasers-container .content-item .description {
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    font-family: Stainless-Light;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.content-teasers-container .content-item .description:hover {
+    color: #000000;
+}
+
+.content-teasers-container .content-item .links {
+    color: #000000;
+    text-decoration: none;
+    font-family: Stainless-Light;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.content-teasers-container .content-item .links a {
+    color: #0a64a0;
+    text-decoration: none;
+}
+
+.content-teasers-container .content-item .links a:after {
+    content: "•";
+    font-size: 11px;
+    margin-left: 7px;
+    margin-right: 4px;
+    vertical-align: top;
+}
+
+.content-teasers-container .content-item .links a:last-child:after {
+    content: "";
+}
+
+.content-teasers-container .content-item .links:hover,
+.content-teasers-container .content-item .links a:hover {
+    color: #000;
+}
+.track-page .jcarousel-image-caption {
+    line-height: 1.4em;
+}
+
+#driverContainer .driver-bio-summary{
+  color: #000;
+}
+#driverContainer .driver-stats .column1-stats{
+  width: 49%;
+  padding-right: 20px;
+}
+#driverContainer .social{
+  display: block;
+  clear: both;
+  float: none;
+  padding-top: 20px;
+}
+div.nascar-advertisement{
+  padding-bottom: 20px;
+}
+div.nascar-advertisement iframe{
+  margin-bottom: 0;
+}
+@media screen and (max-width: 900px) {
+    p.wpml-ls-statics-post_translations.wpml-ls {
+        color: #B5B3AB;
+        width: auto;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 20px;
+        font-size: 14px;
+        position: absolute;
+        right: 15px;
+        top: 18px;
+        z-index: 500;
+        left: 10px;
+        height:0px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .single-gallery-widget.wrapper{
+        max-width: 100%;
+        margin-left: -5px;
+    }
+    .htwgt-tm .track-info {
+        margin: 0 auto;
+        display: block;
+        width: 100px;
+        width: 120px;
+        text-align: center;
+        padding: 0;
+    }
+    .jcarousel-info {
+        padding: 0;
+    }
+    .jcarousel-info-credit {
+        text-align: left;
+        font-size: 10px;
+        line-height: 1.4em;
+    }
+    .track-page .jcarousel-image-caption {
+        color: #787878;
+        margin-bottom: 2px;
+        font-size: 14px;
+        line-height: 1.4em;
+        padding-top: 10px;
+    }
+    .single-gallery-widget .jcarousel-image-caption, .single-gallery-widget .jcarousel-info-heading, .single-gallery-widget .jcarousel-info-count {
+        text-align: left;
+    }
+    .content-teasers-container .content-item .links a {
+        display: inline-block;
+    }
+    .content-teasers-container {
+        padding: 0px 0 0 0 !important;
+        margin-top: 0px;
+    }
+    .content-teasers-container h2 {
+        padding-left: 0;
+    }
+
+    .content-teasers-container .content-item{
+        margin-bottom: 0px;
+    }
+    .content-teasers-container .content-item .links{
+        text-align: center;
+    }
+}
+
+/* End Content Teaser Styles*/
+
+.article-page-container .entry-content, .main-page-container .entry-content {
+    font-size: 14px;
+    line-height: 1.2em;
+}
+.jcarousel-info-count {
+    color: #787878;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: bold;
+}
+.jcarousel-info-heading {
+    font-size: 16px;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 7px;
+    color: #000;
+    font-family: Stainless-Bold;
+}
+
+.jcarousel-image-caption a {
+    color: #016699;
+}
+
+.jcarousel-control-prev, .jcarousel-control-next{
+    color: #016699 !important;
+}
+
+.jcarousel-info-credit {
+
+    color: #787878;
+
+    padding-top: 10px;
+
+    padding-bottom: 10px;
+
+    font-family: stainless-regular;
+}
+
+.jcarousel-info-heading {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.jcarousel-image-caption {
+    color: #787878;
+    margin-bottom: 2px;
+}
+
+.jcarousel-info-count {
+    font-size: 12px;
+    color: #CCCCCC;
+}
+
+.track-page .jcarousel img {
+    height: 360px;
+}
+
+.track-page .single-gallery-widget.wrapper {
+    padding: 0 0 20px 0;
+}
+
+.track-page .has_sidebar .single-gallery-widget.wrapper {
+    padding-left: 5px !important;
+    padding-top: 15px !important;
+}
+
+.track-page .panel-grid .has_sidebar .panel-grid-cell:last-child {
+    margin: 0 0 0 15px;
+}
+
+.track-page .inner-container {
+    padding: 0 15px 20px 15px;
+    max-width: 1020px;
+}
+
+.track-page .panel-grid .has_sidebar .panel-grid-cell:first-child > div {
+    padding-left: 5px;
+}
+
+.track-page .has_sidebar .panel-grid-cell:last-child {
+    padding-top: 0 !important;
+}
+
+.track-page .track-title {
+    margin-top: 20px !important;
+    margin-left: 20px;
+    text-align: left !important;
+    background-color: transparent;
+    color: #000000;
+    font-family: stainless-bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 9px 0 15px;
+}
+
+.block-articles p {
+    line-height: 28px;
+}
+.article-page-container .entry-meta span, .block-articles .entry-content p {
+    font-size: 16px;
+}
+.article-page-container h1 {
+    font-weight: 200;
+    font-family: stainless-bold;
+}
+article .featuredCaption {
+    margin-bottom: 0px;
+}
+.primary-sidebar .video-list-container .video-list-item:nth-child(3n+1) {
+    padding: 0 10px 0 10px;
+}
+.primary-sidebar .video-list-container h3 span {
+    font-family: stainless-bold;
+    text-align: center;
+}
+.primary-sidebar .photo-list-container h3 span {
+    font-family: stainless-bold;
+    text-align: center;
+}
+.video-title h1{
+    font-size: 20px;
+}
+.recent-video-item h3{
+    font-size:18px;
+}
+.single-event-container a:focus {
+  outline: 2px solid #127cbd;
+}
+@media screen and (min-width: 901px) {
+  .nascar-hometracks .primary-navigation li .menu-item-has-children > a,
+  .primary-navigation li .page_item_has_children > a {
+      padding-right: 20px;
+      width: auto;
+  }
+}
+/*Begin Mobile Styling*/
+@media screen and (max-width: 900px) {
+    .header-main .site-title {
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    .toggled-on .menu-main-nav-container {
+        margin-top: -20px;
+    }
+    nav#primary-navigation.toggled-on .nav-menu {
+        height: 100%;
+        margin-top: 70px;
+        padding: 30px 0;
+        display: block;
+    }
+
+    ul#menu-main-nav {
+        background-color: #000000;
+        position: relative;
+    }
+
+    ul#menu-main-nav li {
+        text-align: left;
+    }
+
+    ul#menu-main-nav li a {
+        font-size: 12px;
+        font-weight: 100;
+        width: 52%;
+    }
+
+    nav.primary-navigation .menu-item-has-children > a:after,
+    nav.primary-navigation .page_item_has_children > a:after,
+    nav.primary-navigation .menu-item-has-children li.menu-item-has-children > a:after,
+    nav.primary-navigation .menu-item-has-children li.page_item_has_children > a:after,
+    nav.primary-navigation .page_item_has_children li.menu-item-has-children > a:after,
+    nav.primary-navigation .page_item_has_children li.page_item_has_children > a:after {
+        font-size: 10px;
+        top: 0;
+    }
+
+    ul#menu-main-nav ul.sub-menu {
+        padding: 10px 0;
+        position: absolute;
+        right: 0px;
+        top: 0;
+        width: 50%;
+    }
+    .toggled-on #menu-main-nav .menu-item .sub-menu {
+        background-color: #1e73be;
+        min-height: auto;
+    }
+    .toggled-on #menu-main-nav .menu-item:hover {
+        background-color: #1e73be;
+    }
+    .toggled-on #menu-main-nav .menu-item > a:hover {
+        color: #000000;
+    }
+    nav.primary-navigation .menu-main-nav-container #menu-main-nav ul.sub-menu li ul.sub-menu {
+        color: #000000;
+    }
+    nav.primary-navigation .menu-main-nav-container ul.nav-menu ul.sub-menu li a,
+    nav.primary-navigation .menu-main-nav-container ul.nav-menu ul.sub-menu li ul.sub-menu li a {
+        color: #000000;
+    }
+    nav.primary-navigation .menu-main-nav-container #menu-main-nav ul.sub-menu li,
+    nav.primary-navigation .menu-main-nav-container #menu-main-nav ul.sub-menu li ul.sub-menu {
+        /*background-color: #ffcf06;*/
+    }
+    nav.primary-navigation .menu-main-nav-container ul.nav-menu ul.sub-menu,
+    nav.primary-navigation .menu-main-nav-container ul.nav-menu ul.sub-menu li ul.sub-menu {
+        line-height: 50px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .toggled-on #menu-main-nav .menu-item > a:hover,
+    nav.primary-navigation .menu-main-nav-container #menu-main-nav ul.sub-menu li ul.sub-menu,
+    nav.primary-navigation .menu-main-nav-container ul.nav-menu ul.sub-menu li a,
+    nav.primary-navigation .menu-main-nav-container ul.nav-menu ul.sub-menu li ul.sub-menu li a,
+    nav.primary-navigation ul.nav-menu li:hover > a {
+        color: #FFFFFF;
+    }
+    .header-main h1.site-title {
+        display: none;
+    }
+    .toggled-on #menu-main-nav .menu-item .sub-menu {
+        position: inherit;
+    }
+    ul#menu-main-nav ul.sub-menu {
+        padding: 0;
+    }
+    ul#menu-main-nav li a {
+        color: #FFFFFF;
+    }
+    p.wpml-ls-statics-post_translations.wpml-ls.wpml-ls-touch-device {
+        font-size: 14px !important;
+        padding-left: 0px;
+        margin-left: 0px;
+        text-align: center;
+        width: 100%;
+    }
+    .block-articles .entry-meta{
+        margin-bottom: 0px !important;
+    }
+    .hero7-header-txt.overlay-bottom {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        background-color: rgb(47, 47, 47);
+    }
+    .hero7-header-txt .hero-post-title {
+        padding: 10px 10px 0 10px;
+        font-size:26px !important;
+        line-height:32px !important;
+    }
+    .toggled-on #menu-main-nav .menu-item > .sub-menu {
+        width: 80%;
+        padding-left: 60px;
+    }
+    .toggled-on #menu-main-nav .menu-item > .sub-menu ul {
+        padding-left: 80px;
+    }
+    .toggled-on #menu-main-nav .menu-item .sub-menu ul.sub-menu {
+        width: 100%;
+    }
+    .toggled-on #menu-main-nav .menu-item > a {
+        padding: 7px 15px;
+    }
+    li.toggled-on ul.sub-menu, li.toggled-on ul.sub-menu li ul  {
+        padding-left: 50px;
+    }
+    .toggled-on #menu-main-nav .menu-item {
+        padding: 10px 0;
+    }
+
+    .track-page .track-title {
+        width: 100%;
+        float: none;
+        text-align: center !important;
+        margin-left: 0;
+        margin-top: 10px !important;
+    }
+
+    .content-teasers-container .content-teaser-header{
+        text-align: center;
+        margin-bottom: 0px;
+        padding-bottom: 0;
+        text-align: center !important;
+    }
+    .content-teasers-container .content-item .description {
+        text-align: center;
+    }
+    .content-teasers-container .content-item h2{
+        padding: 0 20px;
+        text-align: center;
+        font-size:24px;
+    }
+    .has_sidebar .panel-grid-cell:last-child {
+        width: 90% !important;
+        padding-top: 30px !important;
+        margin: 0 auto !important;
+    }
+    .menu-footer-container .menu-item a {
+        padding: 10px 0 !important;
+    }
+    .article-page-container .entry-meta{
+        padding-left: 0;
+    }
+    .article-page-container .entry-meta span{
+        font-size: 16px;
+        text-transform: none;
+    }
+    .entry-header .title-wrap{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .entry-header .title-wrap .entry-title{
+        padding-left: 0;
+    }
+    .block-articles #article-social-icons{
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .block-articles .entry-header{
+        padding:10px 20px !important;;
+    }
+    .block-articles .entry-content {
+        padding: 0px 20px !important;
+    }
+    .block-articles .entry-content p {
+        font-size: 20px;
+        line-height: 34px;
+    }
+    article .featuredCaption {
+        margin-top: 10px;
+        padding:0 10px;
+    }
+    img.size-large{
+        width: 100%;
+    }
+    .primary-sidebar .video-list-container .video-list-item h3{
+        margin:0;
+    }
+    #driverContainer .driver-stats .column1-stats{
+      width: 100%;
+    }
+
+    #driverContainer .series-and-sponsor-inner{
+      padding: 0 15px;
+    }
+    .driver-series-logo span{
+      line-height: 24px;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+    #pl-5 .panel-grid-cell {
+        margin: -1px 0;
+    }
+    .simpleText .seriesTitle {
+        font-size: 16px !important;
+        text-align: center !important;
+        padding-left: 0px !important;
+    }
+    .site-title img{
+        margin-top: 5px;
+    }
+    .content-teasers-container .content-teaser-header {
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        text-align: center !important;
+        padding-top: 20px;
+    }
+    .panel-grid .has_sidebar .panel-grid-cell:first-child {
+        margin-top: 20px;
+    }
+    .block-articles .entry-content p {
+        font-size: 18px !important;
+    }
+    .header-links {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    p.wpml-ls-statics-post_translations.wpml-ls{
+        font-size: 12px !important;
+        padding-top: 0;
+    }
+    .nascar-ad-container {
+        margin-left: -20px;
+    }
+    .single-event-container a figure .img-container img.eventLogo,
+    .single-event-container a figure figcaption,
+    .single-event-container a figure,
+    .single-event-container,
+    #pgc-5-2-0, #pgc-5-2-1, #pgc-5-2-2, #pgc-5-2-3, #pgc-5-4-0, #pgc-5-4-1,
+    #pgc-5-4-2, #pgc-5-4-3, #pgc-5-6-0, #pgc-5-6-1, #pgc-5-6-2, #pgc-5-6-3 {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .panel-grid-cell .single-event-container:last-of-type {
+        margin-bottom: 10px;
+    }
+    .single-event-container figure {
+        padding: 25px 0 20px !important
+    }
+}
+@media screen and (min-width: 250px) and (max-width: 320px) {
+    .nascar-ad-container {
+        margin-left: -20px;
+    }
+    .header-main h1.site-title {
+        display: none;
+    }
+    .full-width .entry-content {
+        padding: 0px !important;
+    }
+  }
+  /* Adding padding for Read More and Stats button */
+    .single-drivers .entry-content .clearfix:after {
+    clear: both;
+  	padding-top:20px;
+}
